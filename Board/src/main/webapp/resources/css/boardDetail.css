@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+.table{
+	width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 13.5px;
+    margin-bottom: 50px;
+}
+
+.th_title {
+	background-color: #eee;
+	text-align: center;
+}
+.th_seq {
+	background-color: #eee;
+	text-align: center;
+}
+.th_date {
+	background-color: #eee;
+	text-align: center;
+}
+.th_hit {
+	background-color: #eee;
+	text-align: center;
+}
+.th_content {
+	background-color: #eee;
+	text-align: center;
+}
+
+th, td {
+	border: 1px dashed #ccc; /* 1픽셀짜리 셀 테두리 */
+	padding: 10px; /* 셀 테두리와 셀 내용 사이의 여백(패딩) */
+}
+
+.td_title{
+	text-align: left;
+}
+.td_seq{
+	text-align: left;
+}
+.td_date{
+	text-align: left;
+}
+.td_hit{
+	text-align: left;
+}
+.td_content {
+	height: 111px;
+	text-align: left;
+}
+
+/* 목록 버튼 */
+.btn {
+	margin-top: 10px;
+    margin-left: 10px;
+	margin-bottom: 25px;
+	font-size: 13px;
+}
+/* 삭제,수정 버튼 */
+.admin_btn {
+	margin-top: 10px;
+    margin-left: 10px;
+	margin-bottom: 25px;
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

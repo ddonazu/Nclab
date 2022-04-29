@@ -1,0 +1,22 @@
+.boardList {
+	border: 1px solid black;
+}
+
+.boardListTable {
+    width: 30%;
+    font-size: 13px;
+}
+
+th, td {
+	border: 1px dashed #ccc; 
+	padding: 10px; 
+}
+
+/* 글쓰기 버튼 */
+.btn {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}

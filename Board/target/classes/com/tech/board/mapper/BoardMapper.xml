@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.tech.board.mapper.BoardMapper">
+	
+	<select id="boardList" resultType="com.tech.board.vo.BoardDto">
+		SELECT BSEQ, BTITLE, BCONTENT, BDATE, BHIT FROM BOARD ORDER BY BSEQ DESC
+	</select>
+	
+	<select id="boardDetail" resultType="com.tech.board.vo.BoardDto">
+		SELECT BSEQ, BTITLE,BCONTENT,BDATE,BHIT 
+		FROM BOARD WHERE BSEQ=#{param1}
+	</select>
+	
+	<insert id="boardWrite">
+		INSERT INTO BOARD
+		VALUES(BOARD_SEQ.NEXTVAL,#{param1},#{param2},SYSDATE,0)
+	</insert>
+	
+	<update id="boardModify">
+		UPDATE BOARD
+		SET BTITLE=#{param2},BCONTENT=#{param3}
+		WHERE BSEQ=#{param1}
+	</update>
+	
+	<delete id="boardDelete">
+		DELETE FROM BOARD WHERE BSEQ=#{param1}
+	</delete>
+	
+	<update id="upHit">
+		UPDATE BOARD
+		SET BHIT=BHIT+1 WHERE BSEQ=#{param1}
+	</update>
+</mapper>
